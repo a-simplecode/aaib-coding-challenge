@@ -17,6 +17,7 @@ export default async function resolve(req, res) {
       res
         .status(200)
         .json({ status: "Ok", message: "Report Resolved Successfully" });
+        
     } catch (error) {
       console.log("DB_ERROR", error.message);
     }

@@ -12,6 +12,7 @@ export default async function reports(req, res) {
 
       client.close();
       res.status(200).json({ status: "Ok", data: result });
+      
     } catch (error) {
       console.log("DB_ERROR", error.message);
       res.status(400).json({ status: "Error", data: error.message });

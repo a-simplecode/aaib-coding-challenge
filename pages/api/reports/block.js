@@ -17,6 +17,7 @@ export default async function block(req, res) {
       res
         .status(200)
         .json({ status: "Ok", message: "Report Blocked Successfully" });
+        
     } catch (error) {
       console.log("DB_ERROR", error.message);
     }
