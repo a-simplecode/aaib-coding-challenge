@@ -16,3 +16,25 @@ I'm using also [MangoDB](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=
 <br>
 
 Also i am deploying this application online On [Vercel](https://vercel.com).
+
+
+#Description
+
+##UX
+
+- Loading the spam reports list from databse that are not blocked.
+- There are to options to do `block` or `resolve`.
+- `Block` terminate the spam report and remove it from the list.
+- `Resolve` set the report as resolved and disable the `block` button for protection reasons. (Not logic to resolve and block same spam report).
+- Refresh data after each event clicked for having always uptodate data while working.
+
+##api's
+
+- `fetch` a *GET* api for viewing the data by looping on an array.
+- `resolve` a *PUT* api for setting the report as resolved.
+- `block` a *PUT* api for setting the report as blocked.
+
+##addons
+
+- `Loaders` and `Toast Messages` for letting the user know whats happening.
+
